@@ -1,0 +1,589 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Chivo", serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+  
+    margin: 0 auto;
+    padding: 0 ; 
+  
+}
+a {
+    text-decoration: none !important;
+}
+
+
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 1); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar-nav .nav-item:first-child .nav-link {
+    color: #ff9900;
+    font-weight: bold;
+    border-bottom: 2px solid #ff9900; 
+}
+
+.navbar-nav .nav-item .nav-link {
+    position: relative;
+    transition: color 0.3s ease-in-out;
+    font-size: 16px;
+    color: #c7c1c1;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ffc107;
+}
+.cart-btn {
+    margin-left: 0; 
+    padding: 6px 10px;
+}
+.navbar-nav .nav-item .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #ffc107;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.navbar-nav .nav-item .nav-link:hover::after {
+    width: 100%;
+}
+ul.li.nav-item {
+padding: 0 !important;
+}
+
+.navbar-collapse {
+    flex-grow: 0 !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionhero{
+    height: 100%;
+}
+
+
+
+/* Reservation Form Section */
+.reserve-img{
+    background-image: url(../assests/img/table-reservation2.jpg);
+}
+.reservation-container {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: #ffcd03;
+    /* padding: 50px 30px 50px 30px; */
+     
+}
+
+.form-container {
+    background-image: url('https://radiustheme.com/demo/wordpress/redchili/wp-content/themes/redchili/assets/img/reservation2-back.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+/* Form Input Styles */
+input.form-control {
+    background-color: transparent !important;
+    border-radius: 0;
+    border: 1px solid #646161
+}
+
+input.form-control::placeholder {
+    color: rgba(249, 246, 246, 0.976);
+}
+
+/* Input Icons */
+.position-relative i {
+    color: white;
+    right: 15px;
+    pointer-events: none;
+}
+
+ .text-white h2 {
+    font-family: 'Roboto Slab', sans-serif !important;
+    color: #0e0d0d !important;
+    text-transform: capitalize;
+    margin-bottom: 0;
+
+}
+
+input .input-box {
+    color: white;
+}
+textarea{
+    background: transparent !important;
+    color: rgb(203, 79, 79) !important;
+    border: 1px solid #232323 !important;
+    
+}
+
+
+input.default-btn, 
+.book-now-btn {
+    font-family: 'Oswald', sans-serif;
+    padding: 12px 20px !important;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 700;
+    display: inline-block;
+    width: 100%;
+    background: transparent !important;
+    color: #222;
+    transition: all 0.3s ease-out;
+}
+
+.default-btn:hover, 
+.book-now-btn:hover {
+    background-color: #f63939 !important;
+    color: #ffffff;
+    border: 1px solid black;
+}
+/* Text Styles */
+.text-white {
+    font-family: "Roboto Slab", serif;
+    /* color: rgb(14, 14, 14); */
+}
+
+
+
+
+
+
+
+
+
+
+#menu-icon{
+     font-size: 2rem;
+     cursor: pointer;
+     display: none;
+}
+
+.home img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.home h1, .home h2 {
+    word-wrap: break-word; 
+}
+
+.btn:hover{
+    transform: scale(1.2) translateY(10px);
+    transition: .4s;
+}
+
+.hero{
+    margin-top: 20px !important;
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 40vh; 
+    object-fit: cover;
+    opacity: 2 !important;
+}
+
+.centered-caption {
+    bottom: 25% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.centered-caption h1 {
+    font-family: "Oswald", serif;
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.centered-caption p {
+    font-size: 1.5rem;
+}
+
+.centered-caption .btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(240, 233, 233, 0.5);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px;
+    color: #bbbac1;
+}
+
+button.prev { left: 10px; }
+button.next { right: 10px; }
+
+button:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+ .navbar li {
+    position: relative;
+    padding: 10px 10px;
+    font-size: 20px;
+}
+
+.navbar-nav .dropdown-menu {
+    position: absolute !important;
+    top: 100%; /* Ensures it stays right under the parent */
+    left: 0;
+    width: max-content;
+    min-width: 200px; /* Adjust width if needed */
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+
+.dropdown-menu li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu a {
+    color: var(--text-color);
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background: var(--main-color);
+    color: #121010;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+.recipe-feature {
+    padding: 50px 20px;
+}
+
+.recipe-img img {
+    max-width: 500px;
+}
+
+.recipe-text h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.recipe-text p {
+    font-size: 16px;
+    color: #666;
+}
+
+.recipe-feature img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.recipe-feature h2, .recipe-feature p {
+    word-wrap: break-word; 
+}
+
+
+.form-control {
+    border-radius: 30px;
+    font-size: 5px;
+    border: 2px solid ##FFC107 !important;
+    transition: 0.3s ease-in-out;
+}
+
+/* Focus effect */
+input.form-control:focus {
+    border-color: #ffc107 !important;
+    box-shadow: 0px 0px 8px rgba(255, 193, 7, 0.5);
+}
+
+/* Search*/
+.search-icon {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8e8c8c;
+    pointer-events: none; 
+}
+#message-container .alert {
+    max-width: 500px;
+    margin: auto;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+span.text-recepi {
+    margin-bottom: 10px !important;
+}
+
+
+.custom-bg {
+    background: url('../assests/img/fork-talk.jpg') center/cover no-repeat; 
+    position: relative;
+    color: white; 
+    padding: 5rem;
+    text-shadow: 2px 2px 10px rgba(218, 206, 206, 0.5); 
+    border-radius: 15px; 
+}
+
+/* Optional: Add a semi-transparent overlay for better readability */
+.custom-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    border-radius: inherit;
+    z-index: 0;
+}
+.custom-bg h2,
+.custom-bg a {
+    position: relative;
+    z-index: 1;
+}
+
+#recipe-description {
+    text-align: start;
+    max-width: 400px; 
+    line-height: 1.8;  
+}
+
+#recipe-title {
+    max-width: 400px; 
+}
+.recipe-feature .row {
+    min-height: 100%; 
+}
+
+
+.category-card {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+}
+
+.category-icon {
+    font-size: 2rem;
+    color: #f39c12;
+}
+
+h2.text-warning {
+    color: #32404D !important;
+    font-size: 40px;
+    display: block;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+p.section-tittle{
+    color: #777777 !important;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+h2.choose{
+    color: #32404D !important
+}
+
+.cart-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ensures it stays level with text */
+    /* padding: 8px 10px;  */
+    border-radius: 8px;
+}
+.hamburger {
+    background: none!important;
+    border: none !important;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 1050;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active .line:nth-child(1) {
+    transform: translateY(4px) rotate(45deg);
+}
+
+.hamburger.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .line:nth-child(3) {
+    transform: translateY(-4px) rotate(-45deg);
+}
+/* Hide cart icon on small screens */
+/* Hide cart icon on small screens */
+@media (max-width: 768px) {
+    .cart-icon {
+        display: none !important;
+    }
+
+    /* Hide the logo and show Sign In */
+    .navbar-brand {
+        display: none !important;
+    }
+
+    .sign-in-btn {
+        display: block !important;
+    }
+}
+
+/* Default state for larger screens */
+.sign-in-btn {
+    display: none; /* Hide sign-in by default */
+}
+
+/* Responsive Scaling */
+@media (max-width: 992px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 10px;
+    }
+
+    .cart-btn {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .cart-btn {
+        font-size: 0.8rem;
+    }
+}
+
+#chatbot {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#chatbot-header {
+    background: #ffcc00;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+
+#close-chat {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#chat-box {
+    height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+#user-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+#open-chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ffcc00;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.social-m{
+    background-color: #333 !important;
+}
+.social-m:hover{
+    background-color: #fee274 !important;
+}
