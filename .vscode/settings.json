@@ -1,3 +1,12 @@
 {
-    "liveServer.settings.port": 5502
+    "liveServer.settings.port": 5502,
+    "editor.minimap.enabled": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.codeActions.triggerOnFocusChange": false,
+    "editor.columnSelection": false,
+    "editor.definitionLinkOpensInPeek": false,
+    "workbench.editor.centeredLayoutFixedWidth": true,
+    "workbench.layoutControl.type": "both",
+    "workbench.layoutControl.enabled": true
 }
